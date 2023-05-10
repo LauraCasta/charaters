@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-lastet
+    runs-on: windows
     steps: 
       - uses: actions/checkout@master
       - run: npm install
