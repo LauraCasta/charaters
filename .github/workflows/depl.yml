@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted
+    runs-on: windows
     steps: 
       - uses: actions/checkout@master
       - run: npm install
