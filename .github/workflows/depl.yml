@@ -14,9 +14,9 @@ jobs:
         working-directory: ./characters
       - run:  CI='' npm run build
         working-directory: ./characters
-      - uses: jakejarvis/s3-sync-action@master
+      - uses: jakejarvis/s3-sync-action@master      
+        working-directory: ./characters
         with: 
-          entryPoint: ./characters
           args: --acl public-read --follow-symlinks --delete
         env: 
           AWS_S3_BUCKET: ${{secrets.AWS_S3_BUCKET}}
