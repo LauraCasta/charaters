@@ -13,6 +13,7 @@ jobs:
     steps: 
       - uses: actions/checkout@master
       - run:  npm install
+        working-directory: LauraCasta/charaters/characters
       - run:  CI='' npm run build
         working-directory: LauraCasta/charaters/characters
       - uses: jakejarvis/s3-sync-action@master
