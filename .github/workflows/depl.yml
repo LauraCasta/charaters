@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-     - './characters/**'
+     - 'characters/**'
 
 jobs:
   deploy:
